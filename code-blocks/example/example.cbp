@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="example" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw_64_7_3_0" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="mingw_64_7_3_0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../include" />
+					<Add directory="../../lib/brotli/c/include/brotli" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../include" />
+					<Add directory="../../lib/brotli/c/include/brotli" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="mingw_64_7_3_0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../../include" />
+					<Add directory="../../lib/brotli/c/enc" />
+					<Add directory="../../lib/brotli/c/dec" />
+					<Add directory="../../lib/brotli/c/common" />
+					<Add directory="../../lib/brotli/c/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../../include" />
+					<Add directory="../../lib/brotli/c/include" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../include/brotli/compress.hpp" />
+		<Unit filename="../../include/brotli/decompress.hpp" />
+		<Unit filename="../../lib/brotli/c/common/constants.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/common/constants.h" />
+		<Unit filename="../../lib/brotli/c/common/context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/common/context.h" />
+		<Unit filename="../../lib/brotli/c/common/dictionary.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/common/dictionary.h" />
+		<Unit filename="../../lib/brotli/c/common/platform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/common/platform.h" />
+		<Unit filename="../../lib/brotli/c/common/transform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/common/transform.h" />
+		<Unit filename="../../lib/brotli/c/common/version.h" />
+		<Unit filename="../../lib/brotli/c/dec/bit_reader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/dec/bit_reader.h" />
+		<Unit filename="../../lib/brotli/c/dec/decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/dec/huffman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/dec/huffman.h" />
+		<Unit filename="../../lib/brotli/c/dec/prefix.h" />
+		<Unit filename="../../lib/brotli/c/dec/state.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/dec/state.h" />
+		<Unit filename="../../lib/brotli/c/enc/backward_references.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/backward_references.h" />
+		<Unit filename="../../lib/brotli/c/enc/backward_references_hq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/backward_references_hq.h" />
+		<Unit filename="../../lib/brotli/c/enc/backward_references_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/bit_cost.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/bit_cost.h" />
+		<Unit filename="../../lib/brotli/c/enc/bit_cost_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/block_encoder_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/block_splitter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/block_splitter.h" />
+		<Unit filename="../../lib/brotli/c/enc/block_splitter_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/brotli_bit_stream.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/brotli_bit_stream.h" />
+		<Unit filename="../../lib/brotli/c/enc/cluster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/cluster.h" />
+		<Unit filename="../../lib/brotli/c/enc/cluster_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/command.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/command.h" />
+		<Unit filename="../../lib/brotli/c/enc/compress_fragment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/compress_fragment.h" />
+		<Unit filename="../../lib/brotli/c/enc/compress_fragment_two_pass.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/compress_fragment_two_pass.h" />
+		<Unit filename="../../lib/brotli/c/enc/dictionary_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/dictionary_hash.h" />
+		<Unit filename="../../lib/brotli/c/enc/encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/encoder_dict.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/encoder_dict.h" />
+		<Unit filename="../../lib/brotli/c/enc/entropy_encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/entropy_encode.h" />
+		<Unit filename="../../lib/brotli/c/enc/entropy_encode_static.h" />
+		<Unit filename="../../lib/brotli/c/enc/fast_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/fast_log.h" />
+		<Unit filename="../../lib/brotli/c/enc/find_match_length.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash_composite_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash_forgetful_chain_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash_longest_match64_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash_longest_match_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash_longest_match_quickly_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash_rolling_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/hash_to_binary_tree_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/histogram.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/histogram.h" />
+		<Unit filename="../../lib/brotli/c/enc/histogram_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/literal_cost.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/literal_cost.h" />
+		<Unit filename="../../lib/brotli/c/enc/memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/memory.h" />
+		<Unit filename="../../lib/brotli/c/enc/metablock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/metablock.h" />
+		<Unit filename="../../lib/brotli/c/enc/metablock_inc.h" />
+		<Unit filename="../../lib/brotli/c/enc/params.h" />
+		<Unit filename="../../lib/brotli/c/enc/prefix.h" />
+		<Unit filename="../../lib/brotli/c/enc/quality.h" />
+		<Unit filename="../../lib/brotli/c/enc/ringbuffer.h" />
+		<Unit filename="../../lib/brotli/c/enc/static_dict.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/static_dict.h" />
+		<Unit filename="../../lib/brotli/c/enc/static_dict_lut.h" />
+		<Unit filename="../../lib/brotli/c/enc/utf8_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/brotli/c/enc/utf8_util.h" />
+		<Unit filename="../../lib/brotli/c/enc/write_bits.h" />
+		<Unit filename="../../lib/brotli/c/include/brotli/decode.h" />
+		<Unit filename="../../lib/brotli/c/include/brotli/encode.h" />
+		<Unit filename="../../lib/brotli/c/include/brotli/port.h" />
+		<Unit filename="../../lib/brotli/c/include/brotli/types.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
