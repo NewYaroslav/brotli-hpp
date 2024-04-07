@@ -74,7 +74,7 @@ namespace brotli {
 		Compressor comp;
 		std::string output;
 		comp.compress(output, data, size);
-		return std::move(output);
+		return output;
 	}
 
     /** \brief Compress string data
@@ -85,7 +85,7 @@ namespace brotli {
 		Compressor comp;
 		std::string output;
 		comp.compress(output, data.data(), data.size());
-		return std::move(output);
+		return output;
 	}
 
 }; // brotli

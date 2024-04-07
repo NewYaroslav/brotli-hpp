@@ -81,7 +81,7 @@ namespace brotli {
 		Decompressor decomp;
 		std::string output;
 		decomp.decompress(output, data, size);
-		return std::move(output);
+		return output;
 	}
 
 	/** \brief Decompress string data
@@ -92,7 +92,7 @@ namespace brotli {
 		Decompressor decomp;
 		std::string output;
 		decomp.decompress(output, data.data(), data.size());
-		return std::move(output);
+		return output;
 	}
 }; // brotli
 
